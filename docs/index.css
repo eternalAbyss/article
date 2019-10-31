@@ -12,7 +12,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
     /* background-position: center; */
     background-attachment: fixed;
 
@@ -49,11 +48,15 @@ background: linear-gradient(  #ffcf40, #ffbf00 );
     color: rgb(255,207,64);
     background: rgba(0,0,0,0.8);
     position: initial;
-    font-size: 6vh;
+    font-size: 5rem;
     padding-left: 20px;
     margin: 0;
     font-family: 'Share Tech Mono', monospace;
     text-align: center;
+}
+
+.heading a:hover{
+    text-decoration: none;
 }
 
 .card-img{
@@ -75,26 +78,8 @@ background: linear-gradient(  #ffcf40, #ffbf00 );
     overflow: hidden;
     height: 100%;
 }
-.card-body p{
-    font-size: 20px;
-}
-@media only screen and (max-width:768px){
-    .image-scroll{
-        overflow: hidden;
-        max-height: 12vh;
-        height: 100%;
-        width: auto;
-        margin: 0 auto;
-    }
 
-    .card-body p{
-        font-size: 1rem !important;
-    }
 
-    .heading a{
-        font-size: 2rem;
-    }
-}
 .content{
     /* margin: 10px; */
     padding: 10px;
@@ -117,17 +102,23 @@ background: linear-gradient(  #ffcf40, #ffbf00 );
 
  .card:hover{
     background: black;
-    /* -webkit-box-shadow: -1px 18px 5px 0px rgba(210,123,232,1); 
-    -moz-box-shadow: -12px 18px 5px 0px rgba(210,123,232,1); 
-    box-shadow: 0px 0px 4px 0px rgb(174, 80, 197);   */
  }
  
  .card a:hover{
      color: rgb(255,191,0);
      text-decoration: none;
  }
-/* 
-.container-articles{
-    padding-left: 3vw;
-} */
 
+@media only screen and (max-width:980px){
+    .heading a{
+        font-size: 7rem;
+    }
+
+    .card h5{
+        font-size: 26px;
+    }
+
+    .card p{
+        font-size: 24px;
+    }
+}
